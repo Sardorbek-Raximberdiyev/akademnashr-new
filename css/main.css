@@ -1,0 +1,178 @@
+body{
+  border-top: 5px solid #ff7500;
+  width: 1440px;
+  margin: 50px auto;
+  font-family: sans-serif;
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
+
+header{
+  margin: 0 170px;
+  height: 91px;
+  display: flex;
+  justify-content: space-between;
+}
+
+header img {
+  margin-top: 15px;
+}
+
+nav{
+  margin-top: 36px;
+  display: block;
+  justify-content: space-between;
+  text-transform: uppercase;
+}
+
+.menyu{
+  margin: 1px;
+  display: flex;
+}
+
+.header-btn{
+  width: 170px;
+  height: 39px;
+  background-color: #FF7500;
+  border-radius: 4px;
+  margin-top: 26px;
+  padding: 12px 24px;
+  box-sizing: border-box;
+}
+
+.block{
+  background-color: #252420;
+  color: white;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.box{
+  margin-top: 80px;
+  margin-left: 170px;
+  width: 387px;
+  height: 328px;
+}
+
+h1{
+  font-size: 72px;
+  font-style: bold;
+}
+
+h2{
+  font-size: 40px;
+}
+
+h3{
+  font-size: 24px;
+}
+
+a{
+  margin-right: 32px;
+  color: #000000;
+  text-decoration: none;
+}
+
+li{
+  list-style-type: none;
+  padding: 0;
+}
+
+p{
+  line-height: 24px;
+  font-size: 16px;
+  font: bold;
+}
+
+span{
+  color: #FF7500;
+}
+
+.hr{
+  width: 80px;
+  height: 3px;
+  background-color: #FF7500;
+}
+
+.image{
+  margin-right: 170px;
+  border-radius: 8px;
+}
+
+.images{
+  margin-right: 60px;
+  border-radius: 12px;
+}
+
+.buy{
+  width: 30%;
+}
+
+.icon{
+  padding: 25px;
+  box-sizing: border-box;
+  text-align: center;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: #ff770071;
+}
+
+.goo{
+  display: block;
+  justify-content: right;
+}
+
+.block_two{
+  width: 1100px;
+  margin: 120px auto 160px;
+  background-color: #252420;
+  color: white;
+  padding: 10px;
+  border-radius: 12px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.box_two{
+  margin: 64px;
+  width: 440px;
+  height: 291px;
+}
+
+.test{
+  margin: 210px auto;
+  width: 1100px;
+  height: 536px;
+}
+
+.ftr{
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn{
+  margin-top: 22px;
+  width: 160px;
+  height: 39px;
+  background-color: #FF7500;
+  padding: 10px 10px;
+  border-radius: 4px;
+}
+
+.btn:hover{
+  cursor: pointer;
+}
+
+.but{
+  display: flex;
+  justify-content: space-between;
+}
+
+
+footer{
+  margin: 0 auto;
+  width: 1100px;
+}
