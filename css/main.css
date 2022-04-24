@@ -1,8 +1,7 @@
 *{
-  margin: 0;
+  box-sizing: border-box;
   text-decoration: none;
   list-style-type: none;
-
 }
 
 *:focus{
@@ -11,24 +10,32 @@
 }
 
 body{
+  margin: 0;
+  padding: 0;
   font-family: "Roboto", "Arial", sans-serif;
-  background-color: rgb(226, 221, 221);
-}
-
-.wrapper{
-  background-color: #fff;
   Font-size: 16px;
   Line-height: 24px;
-  border-top: 5px solid #ff7500;
-  width: 1440px;
-  margin: 0 auto;
+  background-color: #fff;
+}
+
+.container{
+  width: 100%;
+  max-width: 1140px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 /* Saytning header Qismi */
 
 .sait-header{
   background-color: #fff;
-  padding: 16px 170px;
+}
+
+.header-container {
+  padding-top: 16px;
+  padding-bottom: 16px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -110,20 +117,26 @@ nav{
  /* Saytning Birinchi Bo'limi */
 
 .block{
-  display: flex;
-  padding: 50px 0 50px;
-  color: white;
+  margin-bottom: 110px;
   background-color: #252420;
+}
+
+.new-container{
+  display: flex;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  color: white;
   align-items: center;
   justify-content: space-between;
+  position: relative;
 }
 
 .box{
-  margin-left: 170px;
   width: 387px;
 }
 
 .hero-text{
+  margin-top: 0;
   margin-bottom: 32px;
 
 }
@@ -143,18 +156,22 @@ nav{
 }
 
 .image-book{
-  box-shadow: 24px 24px 0 0 rgba(255, 117, 0, 0.6);
-  margin-right: 170px;
+  position: absolute;
+  top: 40px;
+  right: 0;
   border-radius: 10px;
+  box-shadow: 24px 24px 0 0 rgba(255, 117, 0, 0.6);
 }
 
 /* Saytning ikkichi bo'limi */
 
 .block_two{
+  padding-top: 100px;
+  padding-bottom: 210px;
   background-color: #FFFFFF;
-  padding: 210px 210px;
-  margin-bottom: 120px;
 }
+
+
 
 .buy{
   width: 26%;
@@ -175,33 +192,30 @@ nav{
 
 /* Saytning uchunchi bo'limi */
 
-.block_three{
-  width: 1100px;
+.librari{
   display: flex;
+  margin-top: 120px;
+  margin-bottom: 160px;
+  padding: 64px;
   border-radius: 12px;
-  margin: 0 auto 160px;
-  padding: 50px 0 50px;
-  color: white;
+  color: #fff;
   background-color: #252420;
-  align-items: center;
-  justify-content: space-between;
+  position: relative;
 }
 
-.box_three{
-  margin-left: 64px;
+.box_three {
   width: 440px;
-  height: 291px;
 }
 
 .text{
   margin-bottom: 24px;
 }
 .text p{
+  margin-top: 0;
   margin-bottom: 12px;
 }
 
 .text p:last-child{
-  font-family: "Roboto", "Arial", sans-serif;
   font-weight: 700;
 }
 
@@ -210,16 +224,18 @@ span{
 }
 
 .image-books{
-  margin-right: 60px;
+  position: absolute;
+  bottom: 64px;
+  right: 64px;
   border-radius: 12px;
 }
 
 /* Saytning footer qismi yani oxirgi bo'limi */
 
 .footer{
+  padding-top: 56px;
+  padding-bottom: 56px;
   background-color: #F8F8F8;
-  margin: 0 auto;
-  padding: 56px 170px;
 }
 
 .but{
@@ -263,6 +279,7 @@ span{
 .footer-hr{
   border: 0;
   height: 2px;
+  margin-top: 0;
   background-color: #25242086;
   margin-bottom: 64px;
 }
@@ -303,7 +320,7 @@ span{
 
  /* class bilan nom berilmagan atributlar */
 
-h1{
+h1 {
   margin-bottom: 72px;
   Font-family: Roboto Condensed;
   font-weight: bold;
@@ -311,9 +328,10 @@ h1{
   Line-height: 86px;
 }
 
-h2{
+h2 {
+  margin-top: 0;
   margin-bottom: 24px;
-  Font-family: "Roboto Condensed" "Arial" sans-serif;
+  Font-family: "Roboto Condensed", "Arial", sans-serif;
   font-weight: 700;
   Font-size: 40px;
   line-height: 48px;
@@ -328,5 +346,6 @@ h3{
 }
 
 ul{
+  margin: 0;
   padding: 0;
 }
