@@ -177,6 +177,10 @@ nav{
   width: 26%;
 }
 
+.buy p {
+  margin: 0;
+}
+
 .icon{
   margin-bottom: 32px;
   display: flex;
@@ -216,6 +220,7 @@ nav{
 }
 
 .text p:last-child{
+  line-height: 24px;
   font-weight: 700;
 }
 
@@ -321,6 +326,7 @@ span{
  /* class bilan nom berilmagan atributlar */
 
 h1 {
+  margin-top: 0;
   margin-bottom: 72px;
   Font-family: Roboto Condensed;
   font-weight: bold;
@@ -338,6 +344,7 @@ h2 {
 }
 
 h3{
+  margin-top: 0;
   margin-bottom: 12px;
   Font-family: Roboto Condensed;
   font-weight: bold;
