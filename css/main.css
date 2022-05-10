@@ -27,9 +27,18 @@ body{
   padding-right: 20px;
 }
 
+h2 {
+  margin-top: 0;
+  margin-bottom: 24px;
+  Font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-weight: 700;
+  Font-size: 40px;
+  line-height: 48px;
+}
+
 /* Saytning header Qismi */
 
-.sait-header{
+.header{
   background-color: #fff;
 }
 
@@ -41,31 +50,32 @@ body{
   align-items: center;
 }
 
-.sait-icon{
+.header__icon {
+  display: flex;
   transition: opacity 0.4s ease;
- }
+}
 
- .sait-icon:hover{
-   opacity: 0.8;
- }
+.header__icon:hover{
+  opacity: 0.8;
+}
 
- .sait-icon:active{
-   opacity: 0.6;
- }
+.header__icon:active{
+  opacity: 0.6;
+}
 
-.link-nav{
+.header__link-nav{
   align-items: center;
   display: flex;
 }
 
-nav{
+.header__sitenav{
   font-family: "Roboto", "Arial", sans-serif;
   display: block;
   justify-content: space-between;
   text-transform: uppercase;
 }
 
-.menyu {
+.header__list {
   display: flex;
   Font-family: "Roboto", "Arial", sans-serif;
   font-weight: 500;
@@ -73,21 +83,21 @@ nav{
   Line-height: 15px;
 }
 
-.sitenav-item{
+.header__item{
   margin-right  : 32px;
 }
 
-.menyu a{
+.header__list a{
   text-decoration: none;
   transition: color 0.4s ease, opacity 0.4s ease;
   color: black;
 }
 
-.menyu a:active {
+.header__list a:active {
   opacity: 0.6;
 }
 
-.menyu a:hover {
+.header__list a:hover {
   color: #ff7500;
 }
 
@@ -114,14 +124,15 @@ nav{
   opacity: 0.6;
 }
 
+
  /* Saytning Birinchi Bo'limi */
 
-.block{
+.hero {
   margin-bottom: 110px;
   background-color: #252420;
 }
 
-.new-container{
+.hero__container{
   display: flex;
   padding-top: 80px;
   padding-bottom: 80px;
@@ -131,31 +142,31 @@ nav{
   position: relative;
 }
 
-.box{
+.hero__box{
   width: 387px;
 }
 
-.hero-text{
+.hero__text{
   margin-top: 0;
   margin-bottom: 32px;
 
 }
 
-.hr-one{
+.hero__hr-one{
   margin-bottom: 40px;
   width: 80px;
   height: 3px;
   background-color: #FF7500;
 }
 
-.hr-two{
+.feature__hr{
   margin-bottom: 24px;
   width: 80px;
   height: 3px;
   background-color: #FF7500;
 }
 
-.image-book{
+.hero__image{
   position: absolute;
   top: 40px;
   right: 0;
@@ -163,25 +174,30 @@ nav{
   box-shadow: 24px 24px 0 0 rgba(255, 117, 0, 0.6);
 }
 
+
 /* Saytning ikkichi bo'limi */
 
-.block_two{
+.feature{
   padding-top: 100px;
   padding-bottom: 210px;
   background-color: #FFFFFF;
 }
 
-
-
-.buy{
-  width: 26%;
+.feature__heading {
+  margin-top: 0;
+  margin-bottom: 72px;
+  Font-family: Roboto Condensed;
+  font-weight: bold;
+  Font-size: 72px;
+  Line-height: 86px;
 }
 
-.buy p {
-  margin: 0;
+.feature__content {
+  display: flex;
+  justify-content: space-between;
 }
 
-.icon{
+.feature__icon{
   margin-bottom: 32px;
   display: flex;
   align-items: center;
@@ -194,9 +210,26 @@ nav{
   background-color: #ff77003a;
 }
 
+.feature__title {
+  margin-top: 0;
+  margin-bottom: 12px;
+  Font-family: "Roboto Condensed", sans-serif;
+  font-weight: bold;
+  Font-size: 24px;
+  Line-height: 29px;
+}
+
+.feature__box {
+  width: 26%;
+}
+
+.feature__text {
+  margin: 0;
+}
+
 /* Saytning uchunchi bo'limi */
 
-.librari{
+.action__container{
   display: flex;
   margin-top: 120px;
   margin-bottom: 160px;
@@ -207,19 +240,19 @@ nav{
   position: relative;
 }
 
-.box_three {
+.action__box {
   width: 440px;
 }
 
-.text{
+.action__text{
   margin-bottom: 24px;
 }
-.text p{
+.action__text p{
   margin-top: 0;
   margin-bottom: 12px;
 }
 
-.text p:last-child{
+.action__text p:last-child{
   line-height: 24px;
   font-weight: 700;
 }
@@ -228,7 +261,7 @@ span{
   color: #FF7500;
 }
 
-.image-books{
+.action__image-books{
   position: absolute;
   bottom: 64px;
   right: 64px;
@@ -243,41 +276,40 @@ span{
   background-color: #F8F8F8;
 }
 
-.but{
+.contact{
   margin-bottom: 40px;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-.footer_menyu{
+.contact__menu {
   display: flex;
   transition: color 0.4s ease;
 }
 
-.footer-link{
+.contact__link {
   margin-right: 16px;
-
 }
 
-.footer-link:last-child{
+.contact__link:last-child{
   margin-right: 0;
 }
 
-.footer_menyu a{
+.contact__menu a {
   display: flex;
 }
 
-.footer_menyu svg {
+.contact__menu svg {
   display: block;
   color: #252420;
 }
 
-.footer_menyu svg:hover {
+.contact__menu svg:hover {
   color: #ff7500;
 }
 
-.footer_menyu svg:active {
+.contact__menu svg:active {
   opacity: 0.6;
 }
 
@@ -289,25 +321,35 @@ span{
   margin-bottom: 64px;
 }
 
-.ftr{
+
+/* FOOTER BOTTOM */
+
+.footer-link {
   display: flex;
   justify-content: space-between;
   transition: color 0.4s ease;
 }
-.ftr a {
+
+.footer-link__list {
+  padding: 0;
+  margin: 0;
+}
+
+
+.footer-link__link {
   color:#252420;
   transition: color 0.4s ;
 }
 
-.ftr a:hover {
+.footer-link__link:hover {
   color: #ff7500;
 }
 
-.ftr a:active {
+.footer-link__link:active {
   opacity: 0.6;
 }
 
-.content{
+.footer-link__content{
   Font-family:  "Roboto" "Arial" sans-serif;
   Font-size: 16px;
   font-weight: 400;
@@ -315,44 +357,10 @@ span{
   width: 224px;
 }
 
-.content li{
+.footer-link__item {
   margin-bottom: 16px;
 }
 
-.content li:last-child{
+.footer-link__item:last-child{
   margin-bottom: 0;
-}
-
- /* class bilan nom berilmagan atributlar */
-
-h1 {
-  margin-top: 0;
-  margin-bottom: 72px;
-  Font-family: Roboto Condensed;
-  font-weight: bold;
-  Font-size: 72px;
-  Line-height: 86px;
-}
-
-h2 {
-  margin-top: 0;
-  margin-bottom: 24px;
-  Font-family: "Roboto Condensed", "Arial", sans-serif;
-  font-weight: 700;
-  Font-size: 40px;
-  line-height: 48px;
-}
-
-h3{
-  margin-top: 0;
-  margin-bottom: 12px;
-  Font-family: Roboto Condensed;
-  font-weight: bold;
-  Font-size: 24px;
-  Line-height: 29px;
-}
-
-ul{
-  margin: 0;
-  padding: 0;
 }
