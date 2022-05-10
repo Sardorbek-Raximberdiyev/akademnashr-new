@@ -14,21 +14,21 @@
 <body>
 
   <!-- SITE-HEADER -->
-  <header class="header">
-    <div class="container header-container">
-      <a class="header__icon" href="index.html">
-        <img src="./images/logo.svg" alt="logo" width="277" height="58">
+  <header class="site-header">
+    <div class="container site-header__container">
+      <a class="site-header__icon" href="index.html">
+        <img class="site-header__img" src="./images/logo.svg" alt="logo" width="277" height="58">
       </a>
-      <div class="header__link-nav">
-        <nav class="header__sitenav">
-          <ul class="header__list">
-            <li class="header__item"><a href="#">Bosh sahifa</a></li>
-            <li class="header__item"><a href="#">Kitoblar</a></li>
-            <li class="header__item"><a href="#">Aksiyalar</a></li>
-            <li class="header__item"><a href="#">Kontaktlar</a></li>
+      <div class="site-header__link-nav">
+        <nav class="header__sitenav sitenav">
+          <ul class="sitenav__list">
+            <li class="sitenav__item"><a class="sitenav__link" href="#">Bosh sahifa</a></li>
+            <li class="sitenav__item"><a class="sitenav__link" href="#">Kitoblar</a></li>
+            <li class="sitenav__item"><a class="sitenav__link" href="#">Aksiyalar</a></li>
+            <li class="sitenav__item"><a class="sitenav__link" href="#">Kontaktlar</a></li>
           </ul>
         </nav>
-        <a class="header__button btn" href="#">Ro'yxatdan o'tish</a>
+        <a class="sitenav__btn btn" href="#">Ro'yxatdan o'tish</a>
       </div>
     </div>
   </header>
@@ -36,8 +36,8 @@
 
   <!-- Saytning birinchi bo'limi -->
 
-  <main>
-    <section class="hero">
+  <main class="main-content">
+    <section class="main-content__hero hero">
       <div class="container hero__container">
         <div class="hero__box">
           <div class="hero__hr-one"></div>
@@ -48,7 +48,7 @@
         <img class="hero__image" src="./images/python-book.jpg" alt="rasm" srcset="./images/python-book-1.jpg" width="510" height="510">
       </div>
     </section>
-    <section class="feature">
+    <section class="main-content__feature feature">
       <div class="feature__container container">
         <div class="feature__hr"></div>
         <h2 class="feature__heading">Nega aynan <br> Akademnashr?</h2>
@@ -71,7 +71,7 @@
         </div>
       </div>
     </section>
-    <section class="action">
+    <section class="main-content__action action">
       <div class="container action__container">
         <div class="action__box">
           <h2>Bolalar kitoblari uchun ajoyib aksiya!</h2>
@@ -89,11 +89,11 @@
 
   <!-- SITE FOOTER -->
 
-  <footer class="footer">
-    <div class="container footer__container">
-      <div class="contact">
+  <footer class="site-footer">
+    <div class="container site-footer__container">
+      <div class="container__contact contact">
         <a class="header__icon" href="index.html">
-          <img src="images/logo.svg" alt="logo" width="277" height="58">
+          <img class="contact__img" src="images/logo.svg" alt="logo" width="277" height="58">
         </a>
         <div class="contact__block">
           <ul class="contact__menu">
@@ -115,38 +115,38 @@
     <!-- Bo'limlar -->
 
       <div class="footer-link">
-        <div class="footer-link__content">
-          <ul class="footer-link__list">
-            <li class="footer-link__item"><a class="footer-link__link" href="#">Bosh sahifa</a></li>
-            <li class="footer-link__item"><a class="footer-link__link" href="#">Kitoblar</a></li>
-            <li class="footer-link__item"><a class="footer-link__link" href="#">Aksiyalar</a></li>
-            <li class="footer-link__item"><a class="footer-link__link" href="#">Yangiliklar</a></li>
-            <li class="footer-link__item"><a class="footer-link__link" href="#">Kontaktlar</a></li>
+        <div class="footer-link__content content">
+          <ul class="content__list">
+            <li class="content__item"><a class="content__link" href="#">Bosh sahifa</a></li>
+            <li class="content__item"><a class="content__link" href="#">Kitoblar</a></li>
+            <li class="content__item"><a class="content__link" href="#">Aksiyalar</a></li>
+            <li class="content__item"><a class="content__link" href="#">Yangiliklar</a></li>
+            <li class="content__item"><a class="content__link" href="#">Kontaktlar</a></li>
           </ul>
         </div>
-        <div class="footer-link__content">
-          <ul class="footer-link__list">
-            <li class="footer-link__item"><a class="footer-link__link" href="#">Ilmiy nashirlar</a></li>
-            <li class="footer-link__item"><a class="footer-link__link" href="#">Ilmiy-ommabop nashirlar</a></li>
-            <li class="footer-link__item"><a class="footer-link__link" href="#">Ma'rifiy nashirlar</a></li>
-            <li class="footer-link__item"><a class="footer-link__link" href="#">Lug'atlar</a></li>
-            <li class="footer-link__item"><a class="footer-link__link" href="#">Adabiy-badiiy nashrlar</a></li>
-            <li class="footer-link__item"><a class="footer-link__link" href="#">Abiturientlar uchun</a></li>
-            <li class="footer-link__item"><a class="footer-link__link" href="#">Bolalar uchun</a></li>
+        <div class="content__content">
+          <ul class="content__list">
+            <li class="content__item"><a class="content__link" href="#">Ilmiy nashirlar</a></li>
+            <li class="content__item"><a class="content__link" href="#">Ilmiy-ommabop nashirlar</a></li>
+            <li class="content__item"><a class="content__link" href="#">Ma'rifiy nashirlar</a></li>
+            <li class="content__item"><a class="content__link" href="#">Lug'atlar</a></li>
+            <li class="content__item"><a class="content__link" href="#">Adabiy-badiiy nashrlar</a></li>
+            <li class="content__item"><a class="content__link" href="#">Abiturientlar uchun</a></li>
+            <li class="content__item"><a class="content__link" href="#">Bolalar uchun</a></li>
           </ul>
         </div>
-        <div class="footer-link__content">
-          <ul class="footer-link__list">
-            <li class="footer-link__item"><a class="footer-link__link" href="#">Ko'p so'raladigan savollar</a></li>
-            <li class="footer-link__item"><a class="footer-link__link" href="#">Yetkazib berish haqida</a></li>
-            <li class="footer-link__item"><a class="footer-link__link" href="#">To'lov usullari haqida</a></li>
+        <div class="content__content">
+          <ul class="content__list">
+            <li class="content__item"><a class="content__link" href="#">Ko'p so'raladigan savollar</a></li>
+            <li class="content__item"><a class="content__link" href="#">Yetkazib berish haqida</a></li>
+            <li class="content__item"><a class="content__link" href="#">To'lov usullari haqida</a></li>
           </ul>
         </div>
-        <div class="footer-link__content">
-          <ul class="footer-link__list">
-            <li class="footer-link__item"><a class="footer-link__link" href="#">Bo'sh ish o'rinlari</a></li>
-            <li class="footer-link__item"><a class="footer-link__link" href="#">Biz bilan bog'lanish</a></li>
-            <li class="footer-link__item"><a class="footer-link__link" href="#">Maxfiylik nizomi</a></li>
+        <div class="content__content">
+          <ul class="content__list">
+            <li class="content__item"><a class="content__link" href="#">Bo'sh ish o'rinlari</a></li>
+            <li class="content__item"><a class="content__link" href="#">Biz bilan bog'lanish</a></li>
+            <li class="content__item"><a class="content__link" href="#">Maxfiylik nizomi</a></li>
           </ul>
         </div>
       </div>

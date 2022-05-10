@@ -38,11 +38,11 @@ h2 {
 
 /* Saytning header Qismi */
 
-.header{
+.site-header{
   background-color: #fff;
 }
 
-.header-container {
+.site-header__container {
   padding-top: 16px;
   padding-bottom: 16px;
   display: flex;
@@ -50,20 +50,24 @@ h2 {
   align-items: center;
 }
 
-.header__icon {
+.site__header__icon {
   display: flex;
   transition: opacity 0.4s ease;
 }
 
-.header__icon:hover{
+.site-header__icon:hover{
   opacity: 0.8;
 }
 
-.header__icon:active{
+.site-header__icon:active{
   opacity: 0.6;
 }
 
-.header__link-nav{
+.site-header__img {
+  display: block;
+}
+
+.site-header__link-nav{
   align-items: center;
   display: flex;
 }
@@ -75,7 +79,7 @@ h2 {
   text-transform: uppercase;
 }
 
-.header__list {
+.sitenav__list {
   display: flex;
   Font-family: "Roboto", "Arial", sans-serif;
   font-weight: 500;
@@ -83,21 +87,21 @@ h2 {
   Line-height: 15px;
 }
 
-.header__item{
+.sitenav__item{
   margin-right  : 32px;
 }
 
-.header__list a{
+.sitenav__link{
   text-decoration: none;
   transition: color 0.4s ease, opacity 0.4s ease;
   color: black;
 }
 
-.header__list a:active {
+.sitenav__link:active {
   opacity: 0.6;
 }
 
-.header__list a:hover {
+.sitenav__link:hover {
   color: #ff7500;
 }
 
@@ -126,6 +130,9 @@ h2 {
 
 
  /* Saytning Birinchi Bo'limi */
+.main__content {
+  flex-grow: 1;
+}
 
 .hero {
   margin-bottom: 110px;
@@ -270,7 +277,7 @@ span{
 
 /* Saytning footer qismi yani oxirgi bo'limi */
 
-.footer{
+.site-footer{
   padding-top: 56px;
   padding-bottom: 56px;
   background-color: #F8F8F8;
@@ -281,6 +288,10 @@ span{
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+.contact__img {
+  display: block;
 }
 
 .contact__menu {
@@ -330,26 +341,26 @@ span{
   transition: color 0.4s ease;
 }
 
-.footer-link__list {
+.content__list {
   padding: 0;
   margin: 0;
 }
 
 
-.footer-link__link {
+.content__link {
   color:#252420;
   transition: color 0.4s ;
 }
 
-.footer-link__link:hover {
+.content__link:hover {
   color: #ff7500;
 }
 
-.footer-link__link:active {
+.content__link:active {
   opacity: 0.6;
 }
 
-.footer-link__content{
+.content__content{
   Font-family:  "Roboto" "Arial" sans-serif;
   Font-size: 16px;
   font-weight: 400;
@@ -357,10 +368,10 @@ span{
   width: 224px;
 }
 
-.footer-link__item {
+.content__item {
   margin-bottom: 16px;
 }
 
-.footer-link__item:last-child{
+.content__item:last-child{
   margin-bottom: 0;
 }
