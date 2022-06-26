@@ -40,6 +40,7 @@ h2 {
 
 .site-header{
   background-color: #fff;
+  border-top: 5px solid #ff7500;
 }
 
 .site-header__container {
