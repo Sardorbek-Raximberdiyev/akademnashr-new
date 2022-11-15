@@ -387,7 +387,7 @@ span{
 }
 
 .content__content{
-  Font-family:  "Roboto" "Arial" sans-serif;
+  Font-family:  "Roboto", "Arial", sans-serif;
   Font-size: 16px;
   font-weight: 400;
   Line-height: 19px;
