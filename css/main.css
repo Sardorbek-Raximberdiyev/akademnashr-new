@@ -51,29 +51,29 @@ h2 {
   align-items: center;
 }
 
-.site__header__icon {
+.site-header__icon-link {
   display: flex;
   transition: opacity 0.4s ease;
 }
 
-.site-header__icon:hover{
+.site-header__icon-link:hover{
   opacity: 0.8;
 }
 
-.site-header__icon:active{
+.site-header__icon-link:active{
   opacity: 0.6;
 }
 
-.site-header__img {
+.site-header__icon-img {
   display: block;
 }
 
-.site-header__link-nav{
+.site-header__sitenav-block{
   align-items: center;
   display: flex;
 }
 
-.header__sitenav{
+.site-header__sitenav{
   font-family: "Roboto", "Arial", sans-serif;
   display: block;
   justify-content: space-between;
@@ -310,43 +310,43 @@ span{
   margin-right: 10px;
 } */
 
-.contact__img {
+.contact__icon-img {
   display: block;
 }
 
-.contact__menu {
+.contact__list {
   display: flex;
   transition: color 0.4s ease;
   padding: 0;
   margin: 0;
 }
 
-.contact__link {
+.contact__item {
   margin-right: 16px;
 }
 
-.contact__link a {
+.contact__item a {
   display: inline-block;
 }
 
-.contact__link:last-child{
+.contact__item:last-child{
   margin-right: 0;
 }
 
-.contact__menu a {
+.contact__list a {
   display: flex;
 }
 
-.contact__menu svg {
+.contact__list svg {
   display: block;
   color: #252420;
 }
 
-.contact__menu svg:hover {
+.contact__list svg:hover {
   color: #ff7500;
 }
 
-.contact__menu svg:active {
+.contact__list svg:active {
   opacity: 0.6;
 }
 
@@ -493,7 +493,7 @@ span{
 }
 
 @media only screen and (min-width: 840px) and (max-width: 880px) {
-  .site-header__img {
+  .site-header__icon-img {
     width: 240px;
     height: 50px;
   }
@@ -515,7 +515,7 @@ span{
     border-top: 4px solid #ff7500;
   }
 
-  .site-header__img {
+  .site-header__icon-img {
     width: 240px;
     height: 50px;
   }
@@ -666,7 +666,7 @@ span{
     margin-top: 80px;
   }
 
-  .site-header__img {
+  .site-header__icon-img {
     width: 200px;
     height: 45px;
   }
@@ -751,7 +751,7 @@ span{
     margin-right: auto;
   }
 
-  .site-header__link-nav {
+  .site-header__sitenav-block {
     width: 100%;
     margin-top: 20px;
   }
