@@ -1,5 +1,5 @@
 *{
-  box-sizing: border-box;
+  box-sizing: inherit;
   text-decoration: none;
   list-style-type: none;
 }
@@ -9,7 +9,15 @@
   outline-offset: 2px;
 }
 
+html {
+  height: 100%;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
 body{
+  display: flex;
+  flex-direction: column;
   margin: 0;
   padding: 0;
   font-family: "Roboto", "Arial", sans-serif;
@@ -82,10 +90,6 @@ h2 {
 
 .sitenav__list {
   display: flex;
-  Font-family: "Roboto", "Arial", sans-serif;
-  font-weight: 500;
-  Font-size: 13px;
-  Line-height: 15px;
   padding: 0;
   margin: 0;
 }
@@ -95,8 +99,14 @@ h2 {
 }
 
 .sitenav__link{
+  display: inline-block;
   text-decoration: none;
   transition: color 0.4s ease, opacity 0.4s ease;
+  font-family: "Roboto", "Arial", sans-serif;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 15px;
+  letter-spacing: 1px;
   color: black;
   white-space: nowrap;
 }
@@ -111,16 +121,17 @@ h2 {
 
 .btn{
   display: inline-block;
+  color: #ffffff;
+  text-align: center;
+  border-radius: 4px;
+  padding: 12px 24px;
   font-family: Roboto;
   font-size: 13px;
   line-height: 15px;
   font-weight: bold;
-  color: #ffffff;
-  background-color: #ff7500;
-  text-align: center;
-  border-radius: 4px;
-  padding: 12px 24px;
+  letter-spacing: 0.5px;
   transition: 0.4s;
+  background-color: #ff7500;
   white-space: nowrap;
 }
 
@@ -164,10 +175,14 @@ h2 {
   width: 387px;
 }
 
+.hero__title {
+  letter-spacing: 0.5px;
+}
+
 .hero__text{
   margin-top: 0;
   margin-bottom: 32px;
-
+  letter-spacing: 0.5px;
 }
 
 .hero__hr-one{
@@ -187,7 +202,7 @@ h2 {
 .hero__image{
   position: absolute;
   top: 40px;
-  right: 0;
+  right: 20px;
   border-radius: 10px;
   box-shadow: 24px 24px 0 0 rgba(255, 117, 0, 0.6);
 }
@@ -268,6 +283,7 @@ h2 {
 .action__text p{
   margin-top: 0;
   margin-bottom: 12px;
+  letter-spacing: 0.5px;
 }
 
 .action__text p:last-child{
@@ -544,11 +560,10 @@ span{
     font-size: 26px;
     line-height: 1.2;
     margin-right: 0;
-    margin-bottom: 16px;
   }
 
   .site-header-open .sitenav__item:not(:last-child) {
-    margin-bottom: 16px;
+    margin-bottom: 14px;
   }
 
   .open-button {
@@ -711,6 +726,20 @@ span{
   .site-header__btn {
     display: none;
   }
+
+  .site-header__container {
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 30;
+    background-color: #fff;
+    border-top: 5px solid #ff7500;
+    box-shadow: 0px 1px 10px 1px #222;
+  }
+
+  .hero__container {
+    margin-top: 90px;
+  }
 }
 
 @media only screen and (max-width: 500px) {
@@ -870,6 +899,10 @@ span{
   .site-header__img {
     width: 220px;
     height: 45px;
+  }
+
+  .hero__container {
+    margin-top: 65px;
   }
 }
 
